@@ -1,61 +1,24 @@
 $(function() {
 
     Morris.Area({
-        element: 'morris-area-chart',
-        data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
-        }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
-        }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
-        }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
-        }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
-        }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
-        }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
-        }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
-        }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+        element: 'morris-area-chart-vap-test',
+                data: [{"Last Name":"BXWR TR","First Name":"","MI":"","Transaction":"Redemption: Auto plan","Fund Name":"The Tax-Exempt Fund of Virginia - A","Account Number":12010526,"Trade Date":"02/17/2015","Transaction Amount":"-$20.00"},
+                       {"Last Name":"BALL","First Name":"TENNIS","MI":"","Transaction":"Redemption: Auto plan","Fund Name":"Washington Mutual Investors Fund - 529-A","Account Number":85595146,"Trade Date":"02/17/2015","Transaction Amount":"-$15.99"},
+                       {"Last Name":"BALL","First Name":"TENNIS","MI":"","Transaction":"Redemption: Auto plan","Fund Name":"Washington Mutual Investors Fund - 529-A","Account Number":85595146,"Trade Date":"02/17/2015","Transaction Amount":"-$15.99"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"TEST","First Name":"EVANS","MI":"","Transaction":"Purchase: Auto plan","Fund Name":"The Growth Fund of America - A","Account Number":85587870,"Trade Date":"02/17/2015","Transaction Amount":"$10.00"},
+                       {"Last Name":"GEORGE","First Name":"GIANNA","MI":"","Transaction":"Redemption: Auto plan","Fund Name":"The Bond Fund of America - 529-A","Account Number":85593332,"Trade Date":"02/17/2015","Transaction Amount":"-$9.78"},
+                       {"Last Name":"GEORGE","First Name":"GIANNA","MI":"","Transaction":"Redemption: Auto plan","Fund Name":"The Bond Fund of America - 529-A","Account Number":85593332,"Trade Date":"02/17/2015","Transaction Amount":"-$9.78"
         }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        xkey: 'Trade Date',
+        ykeys: ['Transaction Amount'],
+        labels: ['Transaction Amount'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
