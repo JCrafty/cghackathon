@@ -1,0 +1,205 @@
+[
+  {
+    "index": 0,
+    "account": 2115155,
+    "registername": {
+      "firstname": "Lupe",
+      "lastname": "Cooley"
+    },
+    "purchaseagreements": []
+  },
+  {
+    "index": 1,
+    "account": 3624284,
+    "registername": {
+      "firstname": "Glenna",
+      "lastname": "Clayton"
+    },
+    "purchaseagreements": [
+      {
+        "objectid": "54e7ad9ab2d7517f7e19002e",
+        "id": 0,
+        "isActive": false,
+        "fundcode": 19,
+        "fund": "Fundamental Investors",
+        "shareclass": "A",
+        "amount": "$2,833.64",
+        "shares": 8,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st, 15th",
+          "defer": "Dec"
+        },
+        "banktype": "Fiduciary",
+        "bankname": "Wellsfargo",
+        "banknumber": "****2412",
+        "startdate": "Saturday, February 14, 2015 10:37 PM",
+        "stopdate": "Thursday, May 8, 2014 2:41 PM",
+        "taxyear": 2014
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "account": 3598147,
+    "registername": {
+      "firstname": "Annette",
+      "lastname": "Villarreal"
+    },
+    "purchaseagreements": [
+      {
+        "objectid": "54e7ad9aee1277283e4810d7",
+        "id": 0,
+        "isActive": true,
+        "fundcode": 30,
+        "fund": "Capital World Growth and Income Fund",
+        "shareclass": "A",
+        "amount": "$2,552.59",
+        "shares": 7,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st",
+          "defer": "Dec"
+        },
+        "banktype": "Fiduciary",
+        "bankname": "Bank of America",
+        "banknumber": "****3513",
+        "startdate": "Wednesday, January 28, 2015 2:48 PM",
+        "stopdate": "Tuesday, March 25, 2014 7:43 PM",
+        "taxyear": 2014
+      },
+      {
+        "objectid": "54e7ad9a3e60205ebad38505",
+        "id": 1,
+        "isActive": true,
+        "fundcode": 28,
+        "fund": "AMPCAP Fund",
+        "shareclass": "A",
+        "amount": "$3,399.73",
+        "shares": 13,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st",
+          "defer": "Sep"
+        },
+        "banktype": "Savings",
+        "bankname": "Bank of America",
+        "banknumber": "****3175",
+        "startdate": "Saturday, March 8, 2014 8:02 AM",
+        "stopdate": "Thursday, August 7, 2014 4:37 AM",
+        "taxyear": 2014
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "account": 6450497,
+    "registername": {
+      "firstname": "Yolanda",
+      "lastname": "Carroll"
+    },
+    "purchaseagreements": [
+      {
+        "objectid": "54e7ad9a5884decbf1e62076",
+        "id": 0,
+        "isActive": true,
+        "fundcode": 30,
+        "fund": "Fundamental Investors",
+        "shareclass": "C",
+        "amount": "$2,993.39",
+        "shares": 17,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st",
+          "defer": "Feb"
+        },
+        "banktype": "Fiduciary",
+        "bankname": "Bank of America",
+        "banknumber": "****2016",
+        "startdate": "Friday, January 16, 2015 6:13 AM",
+        "stopdate": "Thursday, January 23, 2014 1:41 AM",
+        "taxyear": 2014
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "account": 5098262,
+    "registername": {
+      "firstname": "Lula",
+      "lastname": "Maddox"
+    },
+    "purchaseagreements": [
+      {
+        "objectid": "54e7ad9aa21179c6e177b950",
+        "id": 0,
+        "isActive": true,
+        "fundcode": 27,
+        "fund": "Fundamental Investors",
+        "shareclass": "B",
+        "amount": "$1,915.23",
+        "shares": 17,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st, 15th",
+          "defer": "Dec"
+        },
+        "banktype": "Checking",
+        "bankname": "Wellsfargo",
+        "banknumber": "****2704",
+        "startdate": "Tuesday, September 9, 2014 6:25 PM",
+        "stopdate": "Thursday, February 20, 2014 7:48 PM",
+        "taxyear": 2014
+      },
+      {
+        "objectid": "54e7ad9aa6a047dd3fd9bf80",
+        "id": 1,
+        "isActive": false,
+        "fundcode": 5,
+        "fund": "Fundamental Investors",
+        "shareclass": "C",
+        "amount": "$1,277.72",
+        "shares": 7,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st",
+          "defer": "Dec"
+        },
+        "banktype": "Checking",
+        "bankname": "Bank of America",
+        "banknumber": "****3926",
+        "startdate": "Thursday, April 10, 2014 12:01 AM",
+        "stopdate": "Friday, September 5, 2014 11:15 PM",
+        "taxyear": 2014
+      },
+      {
+        "objectid": "54e7ad9a36991bd52eb10f15",
+        "id": 2,
+        "isActive": false,
+        "fundcode": 9,
+        "fund": "New Perspective Fund",
+        "shareclass": "C",
+        "amount": "$1,579.12",
+        "shares": 14,
+        "schedule": {
+          "frequency": "TBD",
+          "months": "Jan, Apr, Jul, Oct",
+          "days": "1st",
+          "defer": "Nov"
+        },
+        "banktype": "Savings",
+        "bankname": "Wellsfargo",
+        "banknumber": "****2597",
+        "startdate": "Monday, April 28, 2014 7:04 AM",
+        "stopdate": "Wednesday, October 22, 2014 3:16 AM",
+        "taxyear": 2014
+      }
+    ]
+  }
+]
