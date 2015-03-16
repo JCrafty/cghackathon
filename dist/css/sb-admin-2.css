@@ -211,7 +211,13 @@ body {
 }
 
 .login-panel {
-    margin-top: 25%;
+    margin-top: 5%;
+}
+
+.login-panel .panel-heading {
+    background-color: #99D7F2;
+    border-top-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .flot-chart {
@@ -359,4 +365,8 @@ table.dataTable thead .sorting:after {
 .panel-footer {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
 }
