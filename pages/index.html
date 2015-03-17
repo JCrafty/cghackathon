@@ -541,16 +541,16 @@
                                             <thead>
                                                 <tr>
                                                     <th><a href="" ng-click="predicate = 'name.last'; reverse=false">Name</a></th>
-                                                    <th><a href="" ng-click="predicate = 'transactiondate'; reverse=!reverse">Trnx Date</a></th>
-                                                    <th><a href="" ng-click="predicate = 'transactionamount'; reverse=!reverse">Trnx Amt</a></th>
+                                                    <th><a href="" ng-click="predicate = 'transactiondate'; reverse=!reverse">Trans Date</a></th>
+                                                    <th><a href="" ng-click="predicate = 'transactionamount'; reverse=!reverse">Trans Amt</a></th>
                                                     <th><a href="" ng-click="predicate = 'balance'; reverse=!reverse">Balance</a></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr ng-repeat="client in clients | orderBy:predicate:reverse">
                                                     <td>{{client.name.last}}, {{client.name.first}}</td>
-                                                    <td>{{client.transactiondate}}</td>
                                                     <td>{{client.transactionamount}}</td>
+                                                    <td>{{client.transactiondate}}</td>
                                                     <td>{{client.balance}}</td>
                                                 </tr>
                                             </tbody>
