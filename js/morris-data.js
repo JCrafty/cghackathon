@@ -41,14 +41,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "Retirement",
+            value: 50
         }, {
-            label: "In-Store Sales",
-            value: 30
+            label: "College 529",
+            value: 25
         }, {
-            label: "Mail-Order Sales",
-            value: 20
+            label: "Other Investments",
+            value: 25
         }],
         resize: true
     });
