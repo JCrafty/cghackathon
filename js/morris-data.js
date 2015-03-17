@@ -32,7 +32,7 @@ $(function() {
                        {"purchases":9800.00,"tradeDate":"2015-02-28","totalAssets":1456099900.00,"withdrawals":9500.00}],
         xkey: 'tradeDate',
         ykeys: ['purchases','withdrawals'],
-        labels: ['Purchases','Withdrawals'],
+        labels: ['Purchases','Redemptions'],
         pointSize: 1,
         hideHover: 'auto',
         resize: true
