@@ -208,6 +208,7 @@ body {
 .chat-panel .panel-body {
     height: 350px;
     overflow-y: scroll;
+    width: 100%;
 }
 
 .login-panel {
@@ -216,8 +217,7 @@ body {
 
 .login-panel .panel-heading {
     background-color: #99D7F2;
-    border-top-left-radius: 0;
-    border-top-left-radius: 0;
+    border-radius: 0;
 }
 
 .flot-chart {
@@ -302,7 +302,7 @@ table.dataTable thead .sorting:after {
 }
 
 .huge {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .panel-green {
@@ -381,6 +381,32 @@ table.dataTable thead .sorting:after {
 }
 
 li.dropdown a.dropdown-toggle {
-    background-color: #FFFFFF !important;
+    background-color: #33AEE5 !important;
 }
 
+li.dropdown .fa {
+    color: #FFFFFF;
+}
+
+ul.dropdown-menu .fa {
+    color: #009ADF;
+}
+
+
+.navbar-top-links .fa {
+    color: #009ADF;
+}
+
+.navbar-default {
+    border-color: #999;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"]  {
+    height: 36px !important;
+}
+
+.navbar-static-top {
+    border-width: 0 0 3px;
+}
