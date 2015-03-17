@@ -26,13 +26,13 @@ $(function() {
                        {"purchases":2500.00,"tradeDate":"2015-02-22","totalAssets":1456799900.00,"withdrawals":1500.00},
                        {"purchases":3300.00,"tradeDate":"2015-02-23","totalAssets":1456729900.00,"withdrawals":3300.00},
                        {"purchases":3300.00,"tradeDate":"2015-02-24","totalAssets":1456699900.00,"withdrawals":2300.00},
-                       {"purchases":50000.00,"tradeDate":"2015-02-25","totalAssets":1456899900.00,"withdrawals":40000.00},
+                       {"purchases":5000.00,"tradeDate":"2015-02-25","totalAssets":1456899900.00,"withdrawals":4000.00},
                        {"purchases":2300.00,"tradeDate":"2015-02-26","totalAssets":1456709900.00,"withdrawals":300.00},
                        {"purchases":4900.00,"tradeDate":"2015-02-27","totalAssets":1456299900.00,"withdrawals":3900.00},
                        {"purchases":9800.00,"tradeDate":"2015-02-28","totalAssets":1456099900.00,"withdrawals":9500.00}],
         xkey: 'tradeDate',
         ykeys: ['purchases','withdrawals'],
-        labels: ['Purchases','Withdrawals'],
+        labels: ['Purchases','Redemptions'],
         pointSize: 1,
         hideHover: 'auto',
         resize: true
@@ -41,14 +41,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "Retirement",
+            value: 50
         }, {
-            label: "In-Store Sales",
-            value: 30
+            label: "College 529",
+            value: 25
         }, {
-            label: "Mail-Order Sales",
-            value: 20
+            label: "Other Investments",
+            value: 25
         }],
         resize: true
     });
