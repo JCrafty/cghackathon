@@ -208,6 +208,7 @@ body {
 .chat-panel .panel-body {
     height: 350px;
     overflow-y: scroll;
+    width: 100%;
 }
 
 .login-panel {
@@ -216,8 +217,7 @@ body {
 
 .login-panel .panel-heading {
     background-color: #99D7F2;
-    border-top-left-radius: 0;
-    border-top-left-radius: 0;
+    border-radius: 0;
 }
 
 .flot-chart {
@@ -399,4 +399,10 @@ ul.dropdown-menu .fa {
 
 .navbar-default {
     border-color: #666666;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"]  {
+    height: 36px !important;
 }
