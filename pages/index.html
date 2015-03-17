@@ -256,7 +256,33 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    
+                    <div class="panel capital-blue40">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-weixin fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">Bhaumik Patel</div>
+                                    <div><br/>Client Communications</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel-footer" ng-controller="clientComms">
+                            <span class="pull-left"><a href="#">View Details</a></span>
+                            <span class="pull-right">
+                                <label>Client list: </label>
+                                <select style="width: 180px;" ng-model="clientList">
+                                    <option>Bhaumik Patel</option>
+                                    <option>Edward J Block</option>
+                                    <option>Diane L Adele</option>
+                                </select>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -485,8 +511,7 @@
                     <div class="chat-panel panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-comments fa-fw"></i>
-                            Chat
-                            
+                            Client SMS Communications
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -566,8 +591,39 @@
                             </div>
                         </div>
                         <!-- /.panel-footer -->
+
                     </div>
                     <!-- /.panel .chat-panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-envelope fa-fw"></i> Client E-Mail Communications
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item"> Need Roth IRA Roll-over Forms for...
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item"> Re: IRA Contributions for 2014...
+                                    <span class="pull-right text-muted small"><em>1 day ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item"> Lets get together and discuss retir...
+                                    <span class="pull-right text-muted small"><em>2 days ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                     Re: Thank you for your time...
+                                    <span class="pull-right text-muted small"><em>1 week ago</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All E-mail</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
                 </div>
                 <!-- /.col-lg-4 -->
             </div>
