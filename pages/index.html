@@ -11,10 +11,6 @@
 
     <title>American Funds Advisor Dashboard</title>
 
-    <script src="../dist/js/angular.min.js"></script>
-
-
-
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -36,20 +32,222 @@
     <link href="../dist/css/nextgen-responsive.css" rel="stylesheet" type="text/css">
     <link href="../dist/css/fonts.css" rel="stylesheet" type="text/css">
     <link href="../dist/css/msgs-icons.css" rel="stylesheet" type="text/css">
+    
+    <!-- Angular.js -->
+    <script src="../dist/js/angular.min.js"></script>
+    <script src="../dist/js/ui-bootstrap-tpls-0.12.1.min.js"></script>
 
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script>
+        var app = angular.module('dashboard', ['ui.bootstrap']);
+        
+        app.controller('clientCtrl', function($scope) {
+                       $scope.clients = [
+                                         {
+                                         "address": "827 Thatford Avenue, Coinjock, Pennsylvania, 279",
+                                         "phone": "+1 (972) 444-2034",
+                                         "email": "jacklyn.meyer@quizka.us",
+                                         "company": "QUIZKA",
+                                         "name": {
+                                         "last": "Meyer",
+                                         "first": "Jacklyn"
+                                         },
+                                         "balance": "$2,272,529.97",
+                                         "transactiondate": "01-05-2015",
+                                         "transactionamount": "$2,334.82",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 0,
+                                         "_id": "55085ec637675a090ce4be30"
+                                         },
+                                         {
+                                         "address": "987 Farragut Road, Caberfae, Wyoming, 7280",
+                                         "phone": "+1 (844) 490-2161",
+                                         "email": "shelley.meadows@slambda.tv",
+                                         "company": "SLAMBDA",
+                                         "name": {
+                                         "last": "Meadows",
+                                         "first": "Shelley"
+                                         },
+                                         "balance": "$2,665,925.86",
+                                         "transactiondate": "01-09-2015",
+                                         "transactionamount": "$3,855.98",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 1,
+                                         "_id": "55085ec66a93e4fccff92dac"
+                                         },
+                                         {
+                                         "address": "933 Bassett Avenue, Whitmer, Massachusetts, 8308",
+                                         "phone": "+1 (877) 517-2985",
+                                         "email": "melissa.kirkland@applica.info",
+                                         "company": "APPLICA",
+                                         "name": {
+                                         "last": "Kirkland",
+                                         "first": "Melissa"
+                                         },
+                                         "balance": "$3,854,085.28",
+                                         "transactiondate": "01-12-2015",
+                                         "transactionamount": "$1,425.97",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 2,
+                                         "_id": "55085ec6e0f4d1e8a01037bf"
+                                         },
+                                         {
+                                         "address": "115 Pilling Street, Vicksburg, Utah, 9619",
+                                         "phone": "+1 (939) 548-3677",
+                                         "email": "lyons.armstrong@affluex.net",
+                                         "company": "AFFLUEX",
+                                         "name": {
+                                         "last": "Armstrong",
+                                         "first": "Lyons"
+                                         },
+                                         "balance": "$687,422.27",
+                                         "transactiondate": "01-20-2015",
+                                         "transactionamount": "$2,719.43",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 3,
+                                         "_id": "55085ec6996333321c08aae6"
+                                         },
+                                         {
+                                         "address": "629 Lafayette Walk, Cavalero, Minnesota, 1647",
+                                         "phone": "+1 (940) 403-3515",
+                                         "email": "dunlap.rojas@medesign.org",
+                                         "company": "MEDESIGN",
+                                         "name": {
+                                         "last": "Rojas",
+                                         "first": "Dunlap"
+                                         },
+                                         "balance": "$3,012,987.96",
+                                         "transactiondate": "01-26-2015",
+                                         "transactionamount": "$3,590.96",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 4,
+                                         "_id": "55085ec66fb2da5169498064"
+                                         },
+                                         {
+                                         "address": "523 Seton Place, Temperanceville, American Samoa, 7056",
+                                         "phone": "+1 (861) 504-2179",
+                                         "email": "roslyn.joyce@exodoc.com",
+                                         "company": "EXODOC",
+                                         "name": {
+                                         "last": "Joyce",
+                                         "first": "Roslyn"
+                                         },
+                                         "balance": "$422,668.49",
+                                         "transactiondate": "01-01-2015",
+                                         "transactionamount": "$1,893.28",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 5,
+                                         "_id": "55085ec6538d5f545affcfd4"
+                                         },
+                                         {
+                                         "address": "737 Dorchester Road, Elrama, Federated States Of Micronesia, 2678",
+                                         "phone": "+1 (859) 490-2739",
+                                         "email": "alyce.ball@tripsch.name",
+                                         "company": "TRIPSCH",
+                                         "name": {
+                                         "last": "Ball",
+                                         "first": "Alyce"
+                                         },
+                                         "balance": "$3,249,527.32",
+                                         "transactiondate": "03-01-2015",
+                                         "transactionamount": "$2,492.03",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 6,
+                                         "_id": "55085ec63cf32abbd00ccd3f"
+                                         },
+                                         {
+                                         "address": "248 Columbus Place, Fairview, Northern Mariana Islands, 3142",
+                                         "phone": "+1 (877) 447-2704",
+                                         "email": "penelope.horne@cuizine.me",
+                                         "company": "CUIZINE",
+                                         "name": {
+                                         "last": "Horne",
+                                         "first": "Penelope"
+                                         },
+                                         "balance": "$3,871,695.41",
+                                         "transactiondate": "02-20-2015",
+                                         "transactionamount": "$2,119.06",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 7,
+                                         "_id": "55085ec6bc306d72b4543831"
+                                         },
+                                         {
+                                         "address": "736 Diamond Street, Derwood, District Of Columbia, 2840",
+                                         "phone": "+1 (846) 587-2973",
+                                         "email": "coleman.william@balooba.biz",
+                                         "company": "BALOOBA",
+                                         "name": {
+                                         "last": "William",
+                                         "first": "Coleman"
+                                         },
+                                         "balance": "$2,203,278.87",
+                                         "transactiondate": "02-15-2015",
+                                         "transactionamount": "$1,100.02",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 8,
+                                         "_id": "55085ec63119e3a744a7f28c"
+                                         },
+                                         {
+                                         "address": "139 Lloyd Street, Lowgap, Oregon, 6484",
+                                         "phone": "+1 (970) 436-2977",
+                                         "email": "russo.sherman@pheast.biz",
+                                         "company": "PHEAST",
+                                         "name": {
+                                         "last": "Sherman",
+                                         "first": "Russo"
+                                         },
+                                         "balance": "$1,237,797.43",
+                                         "transactiondate": "03-01-2015",
+                                         "transactionamount": "$3,992.61",
+                                         "lasttransaction": "<ReferenceError: min is not defined>",
+                                         "index": 9,
+                                         "_id": "55085ec6dc41cb1f691d7413"
+                                         }
+                                         ]
+                       });
+        app.controller('selectDrop', function($scope, $http) {
+                $scope.clients = ['Meyer, Jacklyn', 'Meadows, Shelley', 'Kirkland, Melissa', 'Armstrong, Lyons', 'Rojas, Dunlap', 'Joyce, Roslyn', 'Ball, Alyce', 'Horne, Penelope', 'William, Coleman', 'Sherman, Russo'];
+        });
+    </script>
+    <style>
+        .select-drop h4 {
+            margin-bottom: 0;
+        }
+    
+    .search-form input {
+        height: auto !important;
+    }
+    
+    .client-info {
+        padding: 0;
+    }
+    
+    .client-info .col-lg-4 {
+        padding: 0;
+    }
+
+.client-info .ng-scope {
+    margin: 0;
+}
+    
+    .client-info .ng-scope .ng-binding {
+        white-space: normal;
+    }
+    </style>
 
 </head>
 
-<body>
+<body ng-app="dashboard">
 
-    <div id="wrapper">
-
+    <div id="wrapper" ng-app="topClientInfo">
+        
         <!-- Navigation -->
         <div class="row" style="background-color: black;">
             Top Nav</div>
@@ -188,6 +386,15 @@
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
+                </li>
+                <li>
+                    <div class="select-drop" ng-controller="selectDrop">
+                            <h4>Client Search</h4>
+                            <select>
+                                    <option ng-repeat="x in clients">{{x}}</option>
+                            </select>
+                            </div>
+                    </div>
                 </li>
                 <!-- /.dropdown -->
             </ul>
@@ -332,123 +539,33 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Top Clients
-                            <div class="pull-right">
-                                <!--
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                -->
-                            </div>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body" ng-controller="ClientsCtrl">
-                            <div class="row">
+                        <div class="panel-body client-info">
+                            <div class="row" ng-controller="clientCtrl">
                                 <div class="col-lg-4">
                                     <div class="table-responsive">
-                                      <!-- Angular table  
                                         <table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Name {{1 + 2}}</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
+                                                    <th><a href="" ng-click="predicate = 'name.last'; reverse=false">Name</a></th>
+                                                    <th><a href="" ng-click="predicate = 'transactiondate'; reverse=!reverse">Trnx Date</a></th>
+                                                    <th><a href="" ng-click="predicate = 'transactionamount'; reverse=!reverse">Trnx Amt</a></th>
+                                                    <th><a href="" ng-click="predicate = 'balance'; reverse=!reverse">Balance</a></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr ng-repeat="client in clients">
-                                                    <th>{{client.name.last}} ,{{client.name.first}}</th>
-                                                    <th>{{client.lasttransaction}}</th>
-                                                    <th>{{client.tranactionammount}}</th>
-                                                    <th>{{client.balance}}</th>
+                                                <tr ng-repeat="client in clients | orderBy:predicate:reverse">
+                                                    <td>{{client.name.last}}, {{client.name.first}}</td>
+                                                    <td>{{client.transactiondate}}</td>
+                                                    <td>{{client.transactionamount}}</td>
+                                                    <td>{{client.balance}}</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    -->
-
-
-                                        <table class="table table-bordered table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
+                                    
+<!
                                 </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-                                    <div id="morris-bar-chart"></div>
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
                             </div>
                             <!-- /.row -->
                         </div>
