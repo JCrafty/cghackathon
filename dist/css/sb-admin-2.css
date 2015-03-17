@@ -302,7 +302,7 @@ table.dataTable thead .sorting:after {
 }
 
 .huge {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .panel-green {
@@ -381,6 +381,22 @@ table.dataTable thead .sorting:after {
 }
 
 li.dropdown a.dropdown-toggle {
-    background-color: #FFFFFF !important;
+    background-color: #33AEE5 !important;
 }
 
+li.dropdown .fa {
+    color: #FFFFFF;
+}
+
+ul.dropdown-menu .fa {
+    color: #009ADF;
+}
+
+
+.navbar-top-links .fa {
+    color: #009ADF;
+}
+
+.navbar-default {
+    border-color: #666666;
+}
