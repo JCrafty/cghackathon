@@ -462,6 +462,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <div class="panel capital-blue40">
                         <div class="panel-heading">
@@ -470,20 +471,20 @@
                                     <i class="fa fa-weixin fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">Bhaumik Patel</div>
+                                    <div class="huge" id="client-name">Bhaumik Patel</div>
                                     <div><br/>Client Communications</div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="panel-footer">
-                            <span class="pull-left"><a href="#">View Details</a></span>
+                            <span class="pull-left"><a href="#" id="client-communications">View</a></span>
                             <span class="pull-right">
                                 <label>Client list: </label>
-                                <select style="width: 180px;" ng-model="clientList">
-                                    <option>Bhaumik Patel</option>
-                                    <option>Edward J Block</option>
-                                    <option>Diane L Adele</option>
+                                <select style="width: 180px;" onchange="">
+                                    <option value="#cc">Bhaumik Patel</option>
+                                    <option value="#cc">Edward J Block</option>
+                                    <option value="#cc">Diane L Adele</option>
                                 </select>
                             </span>
                             <div class="clearfix"></div>
@@ -613,6 +614,7 @@
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
+                    <a name="cc"></a>
                     <div class="chat-panel panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-comments fa-fw"></i>

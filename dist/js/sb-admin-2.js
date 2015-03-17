@@ -4,6 +4,15 @@ $(function() {
 
 });
 
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
+}
+
+$("#client-communications").click(function() {
+   scrollToAnchor('cc');
+});
+
 //Loads the correct sidebar on window load,
 //collapses the sidebar on window resize.
 // Sets the min-height of #page-wrapper to window size
