@@ -398,11 +398,15 @@ ul.dropdown-menu .fa {
 }
 
 .navbar-default {
-    border-color: #666666;
+    border-color: #999;
 }
 
 input[type="text"], 
 input[type="password"],
 input[type="email"]  {
     height: 36px !important;
+}
+
+.navbar-static-top {
+    border-width: 0 0 3px;
 }
