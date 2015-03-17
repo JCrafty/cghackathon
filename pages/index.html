@@ -549,9 +549,9 @@
                                             <tbody>
                                                 <tr ng-repeat="client in clients | orderBy:predicate:reverse">
                                                     <td>{{client.name.last}}, {{client.name.first}}</td>
-                                                    <td>{{client.transactionamount}}</td>
-                                                    <td>{{client.transactiondate}}</td>
                                                     <td>{{client.balance}}</td>
+                                                    <td>{{client.transactiondate}}</td>
+                                                    <td>{{client.transactionamount}}</td>
                                                 </tr>
                                             </tbody>
                                         </table>
