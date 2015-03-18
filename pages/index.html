@@ -214,6 +214,8 @@
                        });
         app.controller('selectDrop', function($scope) {
                 $scope.clientDrop = ['Meyer, Jacklyn', 'Meadows, Shelley', 'Kirkland, Melissa', 'Armstrong, Lyons', 'Rojas, Dunlap', 'Joyce, Roslyn', 'Ball, Alyce', 'Horne, Penelope', 'William, Coleman', 'Sherman, Russo'];
+
+
         });
     </script>
     <style>
@@ -254,8 +256,6 @@
             <div class="pull-right"><i style ="color: #009ADF" class="fa fa-user"></i>&nbsp; <strong style="margin-right: 25px;">Jack Sparrow</strong></div>
             </div>
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-
-
 
             <div class="navbar-header" style="padding:10px;">
                 <img src="../dist/css/images/af-logo-transparent.png" alt="American Funds" />          
@@ -372,13 +372,7 @@
                     <!-- /.dropdown-user -->
                 </li>
                 <li>
-                    <div class="select-drop" ng-controller="selectDrop">
-                            <h4>Client Search</h4>
-                            <select>
-                                    <option ng-repeat="x in clientDrop">{{x}}</option>
-                            </select>
-                            </div>
-                    </div>
+                    
                 </li>
                 <!-- /.dropdown -->
             </ul>
@@ -456,7 +450,7 @@
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">View Order</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -464,7 +458,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" ng-controller="selectDrop">
                     <div class="panel capital-blue40">
                         <div class="panel-heading">
                             <div class="row">
@@ -472,25 +466,24 @@
                                     <i class="fa fa-weixin fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge" id="client-name">Bhaumik Patel</div>
-                                    <div><br/>Client Communications</div>
+                                    <div class="huge" id="client-name"></div>
+                                    <div class="last-corres"><br/>Last Correspondence: 2 weeks ago</div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="panel-footer">
-                            <span class="pull-left"><a href="#" id="client-communications">View</a></span>
+                            <span class="pull-left"><a href="#" id="client-communications">View Details</a></span>
                             <span class="pull-right">
-                                <label>Client list: </label>
-                                <select style="width: 180px;" onchange="">
-                                    <option value="#cc">Bhaumik Patel</option>
-                                    <option value="#cc">Edward J Block</option>
-                                    <option value="#cc">Diane L Adele</option>
-                                </select>
+                                <div class="select-drop"  style="margin-left: 10px">
+                                        <select ng-model="selected" id="client-select">
+                                                 <option value="" selected> Select client </option>
+                                                <option ng-repeat="x in clientDrop">{{x}}</option>
+                                        </select>
+                                </div>
                             </span>
                             <div class="clearfix"></div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -648,7 +641,7 @@
                                         <div class="header">
                                             <small class=" text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                            <strong class="pull-right primary-font"><span class="client-name"/></strong>
                                         </div>
                                         <p>
                                             I'd like to increase my IRA contributions? Can you give me a call when you get a chance?
@@ -678,7 +671,7 @@
                                         <div class="header">
                                             <small class=" text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                            <strong class="pull-right primary-font"><span class="client-name"/></strong>
                                         </div>
                                         <p>
                                             Just checking to see your opinion on the market downturn. Should I be concerned?
@@ -704,7 +697,7 @@
                     <!-- /.panel .chat-panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-envelope fa-fw"></i> Client E-Mail Communications
+                            <i class="fa fa-envelope fa-fw"></i> Client E-Mail Communications: <strong><span class="client-name"/></strong>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

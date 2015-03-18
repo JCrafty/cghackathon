@@ -1,6 +1,7 @@
 $(function() {
 
     $('#side-menu').metisMenu();
+    $('.last-corres').hide();
 
 });
 
@@ -12,6 +13,14 @@ function scrollToAnchor(aid){
 $("#client-communications").click(function() {
    scrollToAnchor('cc');
 });
+
+$("#client-select").change(function() {
+    var selectedClient = $("#client-select option:selected").text()
+    $("#client-name").text(selectedClient);
+    $('span.client-name').text(selectedClient)
+    $('div.last-corres').show();
+});
+
 
 //Loads the correct sidebar on window load,
 //collapses the sidebar on window resize.
@@ -42,4 +51,5 @@ $(function() {
     if (element.is('li')) {
         element.addClass('active');
     }
+
 });
